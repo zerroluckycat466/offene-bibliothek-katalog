@@ -21,4 +21,6 @@ app.get('/', (req, res) => {
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server läuft auf Port ${PORT}`); // Log server running message
+}).on('error', err => {
+    console.error('Fehler beim Starten des Servers:', err); // Log any server start errors
 });
