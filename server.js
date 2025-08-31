@@ -8,7 +8,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
-// MongoDB Verbindung
+// MongoDB Connection
 mongoose.connect('mongodb://localhost:27017/offene-bibliothek', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB verbunden'))
     .catch(err => console.error(err));
