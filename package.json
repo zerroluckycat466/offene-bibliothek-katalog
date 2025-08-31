@@ -1,0 +1,21 @@
+{
+  "name": "offene-bibliothek-katalog",
+  "version": "1.0.0",
+  "description": "Ein Open-Source-Projekt zur Verwaltung eines digitalen Katalogs für öffentliche Bibliotheken.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently "npm run client" "npm run server""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "author": "Dein Name",
+  "license": "MIT"
+}
